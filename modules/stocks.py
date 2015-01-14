@@ -20,7 +20,7 @@ def stocks(jenni, input):
 
 	url = 'http://dev.markitondemand.com/Api/v2/Quote/json?symbol=%s'
 
-	url = url % input.group(2)
+	url = url % input.group(2).upper()
 
 	## Basic error checking
 	try:
