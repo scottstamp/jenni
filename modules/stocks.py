@@ -60,7 +60,7 @@ def stocks(jenni, input):
 	change			= form % change
 	change_percent		= form % change_percent
 	change_ytd		= form % change_ytd
-	change_percent_ytd	= form % change_ytd_percent
+	change_percent_ytd	= form % change_percent_ytd
 	high			= form % high
 	low			= form % low
 	open			= form % open
