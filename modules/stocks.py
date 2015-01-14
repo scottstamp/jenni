@@ -66,7 +66,8 @@ def stocks(jenni, input):
 	open			= form % open
 
 	## {Name} - {Symbol} - {LastPrice} - {Change} - {ChangePercent} - {Timestamp}
-	jenni.say(name + ' - ' + symbol + ' - ' + last_price + ' - ' + change + ' - ' + change_percent + ' - ' + timestamp)
+	resp = '{0} ({1}) | Last Price: {2} | Change: {3} ({4}%) | {5}'
+	jenni.say(resp.format(name, symbol, last_price, change, change_percent, timestamp))
 stocks.commands = ['stocks', 'stock', 'ticker']
 
 if __name__ == '__main__':
